@@ -1,0 +1,62 @@
+streaming:
+  sectors: 
+    - path: base\worlds\03_night_city\_compiled\default\always_loaded_1.streamingsector
+      expectedNodes: 15090
+      nodeDeletions:
+        - index: 6646
+          type: worldCompiledCommunityAreaNode
+        - index: 7934
+          type: worldCommunityRegistryNode
+    # 21
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_4.streamingsector
+      expectedNodes: 765
+      nodeDeletions:
+        - index: 763
+          type: worldCollisionNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-32_44_0_0.streamingsector
+      expectedNodes: 571
+      nodeDeletions:
+        - index: 202
+          type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-16_22_0_1.streamingsector
+      expectedNodes: 740
+      nodeDeletions:
+        - index: 189
+          type: worldEntityProxyMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-32_43_0_0.streamingsector
+      expectedNodes: 861
+      nodeDeletions:
+        - index: 222
+          type: worldEntityNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-16_21_0_1.streamingsector
+      expectedNodes: 1485
+      nodeDeletions:
+        - index: 214
+          type: worldEntityProxyMeshNode
+    # cable
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_4_0_3.streamingsector
+      expectedNodes: 2616
+      nodeDeletions:
+          - index: 34
+            type: worldCableMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_4.streamingsector
+      expectedNodes: 765
+      nodeDeletions:
+          - index: 11
+            type: worldCableMeshNode
+          - index: 14
+            type: worldCableMeshNode
+          - index: 17
+            type: worldCableMeshNode
+          - index: 18
+            type: worldCableMeshNode
+          - index: 20
+            type: worldCableMeshNode
+    - path: base\worlds\03_night_city\_compiled\default\exterior_-3_8_0_2.streamingsector
+      expectedNodes: 1148
+      nodeDeletions:
+          - index: 525
+            type: worldStaticMeshNode
+  blocks:
+    - nsm\new_stations.streamingblock
+    - northside_metro/all.streamingblock
