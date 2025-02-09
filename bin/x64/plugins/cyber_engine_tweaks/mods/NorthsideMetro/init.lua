@@ -11,7 +11,7 @@ local Debug = require('Debug/debug.lua')
 
 NSM = {
 	description = "Northside Metro",
-	version = "0.0.1",
+	version = "1.0.0",
     is_debug_mode = false,
     -- version check
     cet_required_version = 34.0, -- 1.34.0
