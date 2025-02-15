@@ -11,12 +11,37 @@ local Debug = require('Debug/debug.lua')
 
 NSM = {
 	description = "Northside Metro",
-	version = "1.0.1",
+	version = "1.0.2",
     is_debug_mode = false,
     -- version check
     cet_required_version = 34.0, -- 1.34.0
     cet_version_num = 0,
 }
+
+registerForEvent("onTweak",function ()
+    -- anygoodname: adding supporting TweakDB entries to remove Tweak XL dependancy:
+    if not TweakDB:GetRecord("FastTravelPoints.wat_nid_metro_ftp_20") then
+        TweakDB:CloneRecord("FastTravelPoints.wat_nid_metro_ftp_20", "FastTravelPoints.wat_nid_metro_ftp_01")
+    end
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_20.displayName", "LocKey#20480")
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_20.district", TweakDBID.new("Districts.ArasakaWaterfront"))
+
+    if not TweakDB:GetRecord("FastTravelPoints.wat_nid_metro_ftp_21") then
+        TweakDB:CloneRecord("FastTravelPoints.wat_nid_metro_ftp_21", "FastTravelPoints.wat_nid_metro_ftp_01")
+    end
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_21.displayName", "LocKey#39940")
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_21.district", TweakDBID.new("Districts.Northside"))
+
+    if not TweakDB:GetRecord("FastTravelPoints.wat_nid_metro_ftp_22") then
+        TweakDB:CloneRecord("FastTravelPoints.wat_nid_metro_ftp_22", "FastTravelPoints.wat_nid_metro_ftp_01")
+    end
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_22.displayName", "LocKey#21523")
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_metro_ftp_22.district", TweakDBID.new("Districts.Northside"))
+
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_dataterm_07.showInWorld", false)
+    TweakDB:SetFlat("FastTravelPoints.wat_nid_dataterm_07.showOnWorldMap", false)
+    ------------------------------------------------
+end)
 
 registerForEvent('onInit', function()
 
