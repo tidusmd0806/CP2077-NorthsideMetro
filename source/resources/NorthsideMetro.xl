@@ -2,9 +2,9 @@ streaming:
   sectors: 
     # 21
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_4.streamingsector
-      expectedNodes: 765
+      expectedNodes: 759
       nodeDeletions:
-        - index: 763
+        - index: 757
           type: worldCollisionNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-32_44_0_0.streamingsector
       expectedNodes: 571
@@ -33,7 +33,7 @@ streaming:
           - index: 34
             type: worldCableMeshNode
     - path: base\worlds\03_night_city\_compiled\default\exterior_-2_2_0_4.streamingsector
-      expectedNodes: 765
+      expectedNodes: 759
       nodeDeletions:
           - index: 11
             type: worldCableMeshNode
